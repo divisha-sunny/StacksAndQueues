@@ -12,6 +12,7 @@ public class Main {
         QueueWithStack1 q1 = new QueueWithStack1();
         QueueWithStack2 q2 = new QueueWithStack2();
         StackWithQueue1 s1 = new StackWithQueue1();
+        StackWithQueue1 s2 = new StackWithQueue1();
        /* q1.Enqueue(5);
         q1.Enqueue(6);
         q1.Enqueue(9);
@@ -40,5 +41,13 @@ public class Main {
        s1.push(4);
         System.out.println(s1.pop());
         System.out.println(s1.pop());
+        s2.push(5);
+        s2.push(6);
+        s2.push(7);
+        s2.push(8);
+        System.out.println(s2.pop());
+        System.out.println(s2.pop());
+        System.out.println(s2.pop());
+        System.out.println(s2.pop());
     }
 }
