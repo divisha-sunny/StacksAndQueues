@@ -1,6 +1,7 @@
 package com.company;
 import QueueWithStack.QueueWithStack1;
 import QueueWithStack.QueueWithStack2;
+import StackProblems.BalancedParenthesis;
 import StackWithQueue.StackWithQueue1;
 
 import java.sql.SQLOutput;
@@ -13,6 +14,7 @@ public class Main {
         QueueWithStack2 q2 = new QueueWithStack2();
         StackWithQueue1 s1 = new StackWithQueue1();
         StackWithQueue1 s2 = new StackWithQueue1();
+        BalancedParenthesis bp = new BalancedParenthesis();
        /* q1.Enqueue(5);
         q1.Enqueue(6);
         q1.Enqueue(9);
@@ -35,7 +37,7 @@ public class Main {
         System.out.println(q2.Dequeue());
         System.out.println(q2.Dequeue());
         System.out.println(q2.Dequeue());*/
-       s1.push(1);
+       /*s1.push(1);
        s1.push(2);
        s1.push(3);
        s1.push(4);
@@ -48,6 +50,12 @@ public class Main {
         System.out.println(s2.pop());
         System.out.println(s2.pop());
         System.out.println(s2.pop());
-        System.out.println(s2.pop());
+        System.out.println(s2.pop());*/
+       char exp[] = {'{','(',')','}','[','}'};
+       if(bp.areParenthesisBalanced(exp)){
+           System.out.println("Balanced");
+       }
+       else
+           System.out.println("Not Balanced");
     }
 }
