@@ -2,9 +2,11 @@ package com.company;
 import QueueWithStack.QueueWithStack1;
 import QueueWithStack.QueueWithStack2;
 import StackProblems.BalancedParenthesis;
+import StackProblems.SortStackUsingRecursion;
 import StackWithQueue.StackWithQueue1;
 
 import java.sql.SQLOutput;
+import java.util.Stack;
 
 public class Main {
 
@@ -15,6 +17,7 @@ public class Main {
         StackWithQueue1 s1 = new StackWithQueue1();
         StackWithQueue1 s2 = new StackWithQueue1();
         BalancedParenthesis bp = new BalancedParenthesis();
+        SortStackUsingRecursion r = new SortStackUsingRecursion();
        /* q1.Enqueue(5);
         q1.Enqueue(6);
         q1.Enqueue(9);
@@ -51,11 +54,24 @@ public class Main {
         System.out.println(s2.pop());
         System.out.println(s2.pop());
         System.out.println(s2.pop());*/
-       char exp[] = {'{','(',')','}','[','}'};
+       /*char exp[] = {'{','(',')','}','[','}'};
        if(bp.areParenthesisBalanced(exp)){
            System.out.println("Balanced");
        }
        else
            System.out.println("Not Balanced");
+    }*/
+        Stack<Integer> stack = new Stack<Integer>();
+        stack.push(40);
+        stack.push(10);
+        stack.push(28);
+        stack.push(21);
+        stack.push(1);
+        stack.push(7);
+        System.out.println("Stack elements before sorting:");
+        r.printStack(stack);
+        r.sortStack(stack);
+        System.out.println("After sorting:");
+        r.printStack(stack);
     }
 }
