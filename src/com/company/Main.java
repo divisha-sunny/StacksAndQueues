@@ -2,6 +2,7 @@ package com.company;
 import QueueWithStack.QueueWithStack1;
 import QueueWithStack.QueueWithStack2;
 import StackProblems.BalancedParenthesis;
+import StackProblems.SortStackUsingAnotherStack;
 import StackProblems.SortStackUsingRecursion;
 import StackWithQueue.StackWithQueue1;
 
@@ -18,6 +19,7 @@ public class Main {
         StackWithQueue1 s2 = new StackWithQueue1();
         BalancedParenthesis bp = new BalancedParenthesis();
         SortStackUsingRecursion r = new SortStackUsingRecursion();
+        SortStackUsingAnotherStack an = new SortStackUsingAnotherStack();
        /* q1.Enqueue(5);
         q1.Enqueue(6);
         q1.Enqueue(9);
@@ -62,16 +64,16 @@ public class Main {
            System.out.println("Not Balanced");
     }*/
         Stack<Integer> stack = new Stack<Integer>();
-        stack.push(40);
-        stack.push(10);
-        stack.push(28);
-        stack.push(21);
-        stack.push(1);
-        stack.push(7);
+        stack.push(34);
+        stack.push(3);
+        stack.push(31);
+        stack.push(98);
+        stack.push(92);
+        stack.push(23);
         System.out.println("Stack elements before sorting:");
         r.printStack(stack);
-        r.sortStack(stack);
+        an.sortStacks(stack);
         System.out.println("After sorting:");
-        r.printStack(stack);
+        an.printStack(stack);
     }
 }

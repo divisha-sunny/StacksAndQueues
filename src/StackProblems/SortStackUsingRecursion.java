@@ -7,14 +7,14 @@ public class SortStackUsingRecursion {
 
     static void sortedInsert(Stack<Integer> s, int x)
     {
-if(s.isEmpty() || x>s.peek()){
-    s.push(x);
-}
-else {
-    int temp = s.pop();
-    sortedInsert(s,x);
-    s.push(temp);
-}
+        if(s.isEmpty() || x>s.peek()){
+            s.push(x);
+        }
+        else {
+            int temp = s.pop();
+            sortedInsert(s,x);
+            s.push(temp);
+        }
 
     }
 
